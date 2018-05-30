@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC');
+:root{
+    font-family: 'Bowlby One SC', cursive;
+}
+
+body{
+    max-width: 980px;
+    margin: auto;
+}
+header nav{
+    display: flex;
+}
+header nav ul{
+    display: flex;
+    flex:1;
+}
+header nav ul li {
+    list-style-type: none;
+    margin: auto;
+}
+
+header nav ul li a {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 200;
+   text-decoration: none;
+    color: #e82323;
+}
+h1{
+    color:#e82323;
+}
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; font-size: 13px;}
+.item3 { grid-area: main; font-size: 13px;}
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; font-size: 13px;}
+
+.grid-container{
+    display:grid;
+    grid-template-areas:'header header  '
+    'menu  main'
+    'footer footer ';
+    grid-gap:10px;
+    
+}
