@@ -20,7 +20,8 @@ header nav ul li {
     margin: auto;
 }
 header a:hover{
-    font-size:40px;
+    background-color:#e82323;
+    color:white;
 }
 
 header nav ul li a {
@@ -47,4 +48,32 @@ h2{
     'footer footer ';
     grid-gap:10px;
     
+}
+.slide-container{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+.mySlides{
+    display:none;
+}
+.intro {
+    max-width: 400px;
+    margin-top: 150px;
+    text-align: center;
+}
+.card {
+    height: 100%;
+}
+
+.alert {
+    position: fixed;
+    top: 50px; 
+    width: 50%;
+    left: 25%;
+    z-index: 1051;
+}
+
+.btn {
+    padding: 0.75rem 0.7rem;
 }

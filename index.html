@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Shop</title>
-	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
@@ -19,34 +19,48 @@
 			<nav>
 
 				<ul>
-					<li>
-						<a href="index.html">Main</a>
+					<li >
+						<a class="grow" href="index.html">Main</a>
 					</li>
 					<li>
-						<a href="#hats">Hats</a>
+						<a class="grow" href="#hats">Hats</a>
 					</li>
 					<li>
-						<a href="#jerseys">Jerseys</a>
+						<a class="grow" href="#jerseys">Jerseys</a>
 					</li>
 					<li>
-						<a href="#shorts">Shorts</a>
+						<a class="grow" href="#shorts">Shorts</a>
 					</li>
 					<li>
-						<a href="#payment">Order</a>
+						<a class="grow" href="#payment">Order</a>
 					</li>
 					<li>
-						<a href="#contacts">Contacts</a>
+						<a class="grow" href="#contacts">Contacts</a>
 					</li>
 					<li>
-						<image src="image/log.png" alt="icon">
+						<img class="grow" src="image/log.png" alt="icon">
 					</li>
 				</ul>
-
+				<div>
+                    <a class="nav-link" href="#cartModal" data-toggle="modal">
+                      <i class="fab fa-opencart fa-spin" aria-hidden="true"></i>
+                        Cart<span id="cart-badge" class="badge badge-light"></span>
+                    </a>
+                </div>
 			</nav>
 
 		</header>
 		<aside>
-			<image src="image/wallpaper.png" alt="team">
+			<div class="mySlides">
+			<img src="image/wallpaper.png" alt="team">
+			</div>
+			<div class="mySlides">
+			<img src="image/trio.jpg" alt="team" width="980" height="653">
+			</div>
+			<div class="mySlides">
+			<img src="image/dunk.jpg" alt="team" width="980" height="653">
+			</div>
+			
 		</aside>
 		<main>
 			<div>
@@ -63,15 +77,18 @@
 				</div>
 				<div class="item2">
 					<h3>Men's Mitchell & Ness <br>Red/Black Chicago Bulls<br> $31.99 </h3>
-					<image src="image/hat_classic.jpg" alt="stuff">
+					<img src="image/hat_classic.jpg" alt="stuff">
+					<button class="btn btn-primary buy" data-id="1">Buy</button>
 				</div>
 				<div class="item3">
 					<h3>Men's Mitchell & Ness<br>Black Chicago Bulls<br> $31.99 </h3>
-					<image src="image/hat_black.jpg" alt="stuff">
+					<img src="image/hat_black.jpg" alt="stuff">
+					<button class="btn btn-primary buy" data-id="2">Buy</button>
 				</div>
 				<div class="item5">
 					<h3>Men's New Era White<br>Chicago Bulls NBA City Series<br> $29.99 </h3>
-					<image src="image/hat_white.jpg" alt="stuff">
+					<img src="image/hat_white.jpg" alt="stuff">
+					<button class="btn btn-primary buy" data-id="3">Buy</button>
 				</div>
 
 			</article>
@@ -81,15 +98,18 @@
 				</div>
 				<div class="item2">
 					<h3>Men's Nike Red Chicago Bulls<br>Authentic Custom Jersey<br>$224.99</h3>
-					<image src="image/red_jersey.jpg" alt="stuff">
+					<img src="image/red_jersey.jpg" alt="stuff">
+					<button class="btn btn-primary buy" data-id="4">Buy</button>
 				</div>
 				<div class="item3">
 					<h3>Men's Mitchell & Ness Scottie Pippen<br>Black Chicago Bulls 1997-98<br>$129.99</h3>
-					<image src="image/black_jersey.jpg" alt="stuff">
+					<img src="image/black_jersey.jpg" alt="stuff">
+					<button class="btn btn-primary buy" data-id="5">Buy</button>
 				</div>
 				<div class="item5">
 					<h3>Men's Mitchell & Ness Scottie<br>Pippen White Chicago Bulls<br>$129.99</h3>
-					<image src="image/white_jersey.jpg" alt="stuff">
+					<img src="image/white_jersey.jpg" alt="stuff">
+					<button class="btn btn-primary buy" data-id="6">Buy</button>
 				</div>
 			</article>
 
@@ -99,11 +119,13 @@
 				</div>
 				<div class="item2">
 					<h3>Men's Mitchell & Ness Gold<br>Chicago Bulls Hardwood Classics<br>$74.99</h3>
-					<image src="image/beige_shorts.jpg" alt="stuff">
+					<img src="image/beige_shorts.jpg" alt="stuff">
+					<button class="btn btn-primary buy" data-id="7">Buy</button>
 				</div>
 				<div class="item3">
 					<h3>Men's Nike Black<br>Chicago Bulls Statement<br>$79.99</h3>
-					<image src="image/black_shorts.jpg" alt="stuff">
+					<img src="image/black_shorts.jpg" alt="stuff">
+					<button class="btn btn-primary buy" data-id="8">Buy</button>
 				</div>
 			</article>
 
@@ -129,9 +151,17 @@
 		</main>
 		<footer>
 			<a href="https://www.facebook.com/chicagobulls/" target="_blank">
-				<image src="image/facebook.jpg" alt="facebook">
+				<img src="image/facebook.jpg" alt="facebook">
 			</a>
 		</footer>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script async src="js/alert-window.js"></script>
+    <script defer src="js/cart.js"></script>
+    <script defer src="js/product-list.js"></script>    
+    <script defer src="js/index.js"></script>
 </body>
 
 </html>
