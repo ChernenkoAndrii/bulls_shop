@@ -12,6 +12,9 @@
 </head>
 
 <body>
+    <button class="btn btn-outline-secondary" id="checkout">Checkout</button>
+    <button class="btn btn-outline-secondary" id="clear_cart">Clear cart</button>
+    <div id="cart_content"></div>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand h1" href="#">Bulls</a>
@@ -67,26 +70,26 @@
         <div class="row">
             <div class="card col-12 col-md-6 col-lg-4 box">
                 <img class="card-img-top" src="image/hat_classic.jpg" alt="classic hat">
-                <div class="card-body">
-                    <h5 class="card-title">Men's Mitchell & Ness Red/Black Chicago Bulls</h5>
-                    <p class="card-text">$31.99</p>
-                    <a href="#" class="btn btn-outline-secondary" data-toggle="modal" data-target="#infoModal">Details</a>
+                <div class="card-body item_box">
+                    <h5 class="card-title item_title">Men's Mitchell & Ness Red/Black Chicago Bulls</h5>
+                    <p class="card-text">$<span class="item_price">31.99</span></p>
+                    <button class="btn btn-outline-secondary add_item" data-id="1">Buy</button>
                 </div>
             </div>
             <div class="card col-12 col-md-6 col-lg-4 box">
                 <img class="card-img-top" src="image/hat_black.jpg" alt="black hat">
-                <div class="card-body">
-                    <h5 class="card-title">Men's Mitchell & NessBlack Chicago Bulls</h5>
-                    <p class="card-text">$31.99</p>
-                    <a href="#" class="btn btn-outline-secondary" data-toggle="modal" data-target="#infoModal">Details</a>
+                <div class="card-body item_box">
+                    <h5 class="card-title item_title">Men's Mitchell & Ness Black Chicago Bulls</h5>
+                    <p class="card-text">$<span class="item_price">31.99</p>
+                    <button class="btn btn-outline-secondary add_item" data-id="2">Buy</button>
                 </div>
             </div>
             <div class="card col-12 col-md-6 col-lg-4 box">
                 <img class="card-img-top" src="image/hat_white.jpg" alt="white hat">
-                <div class="card-body">
-                    <h5 class="card-title">Men's New Era White Chicago Bulls NBA City</h5>
-                    <p class="card-text">$29.99</p>
-                    <a href="#" class="btn btn-outline-secondary" data-toggle="modal" data-target="#infoModal">Details</a>
+                <div class="card-body item_box">
+                    <h5 class="card-title item_title">Men's New Era White Chicago Bulls NBA City</h5>
+                    <p class="card-text">$<span class="item_price">29.99</p>
+                    <button class="btn btn-outline-secondary add_item" data-id="3">Buy</button>
                 </div>
             </div>
         </div>
@@ -96,26 +99,26 @@
         <div class="row">
             <div class="card col-12 col-md-6 col-lg-4 box">
                 <img class="card-img-top" src="image/red_jersey.jpg" alt="red jersey">
-                <div class="card-body">
-                    <h5 class="card-title">Men's Nike Red Chicago Bulls Authentic Custom Jersey</h5>
-                    <p class="card-text">$224.99</p>
-                    <a href="#" class="btn btn-outline-secondary" data-toggle="modal" data-target="#infoModal">Details</a>
+                <div class="card-body item_box">
+                    <h5 class="card-title item_title">Men's Nike Red Chicago Bulls Authentic Custom Jersey</h5>
+                    <p class="card-text">$<span class="item_price">224.99</p>
+                    <button class="btn btn-outline-secondary add_item" data-id="4">Buy</button>
                 </div>
             </div>
             <div class="card col-12 col-md-6 col-lg-4 box">
                 <img class="card-img-top" src="image/black_jersey.jpg" alt="black jersey">
-                <div class="card-body">
-                    <h5 class="card-title">Men's Mitchell & Ness Scottie Pippen Black Chicago Bulls 97-98</h5>
-                    <p class="card-text">$129.99</p>
-                    <a href="#" class="btn btn-outline-secondary" data-toggle="modal" data-target="#infoModal">Details</a>
+                <div class="card-body item_box">
+                    <h5 class="card-title item_title">Men's Mitchell & Ness Scottie Pippen Black Chicago Bulls 97-98</h5>
+                    <p class="card-text">$<span class="item_price">129.99</p>
+                    <button class="btn btn-outline-secondary add_item" data-id="5">Buy</button>
                 </div>
             </div>
             <div class="card col-12 col-md-6 col-lg-4 box">
                 <img class="card-img-top" src="image/white_jersey.jpg" alt="white jersey">
-                <div class="card-body">
-                    <h5 class="card-title">Men's Mitchell & Ness Scottie Pippen White Chicago Bulls</h5>
-                    <p class="card-text">$129.99</p>
-                    <a href="#" class="btn btn-outline-secondary" data-toggle="modal" data-target="#infoModal">Details</a>
+                <div class="card-body item_box">
+                    <h5 class="card-title item_title">Men's Mitchell & Ness Scottie Pippen White Chicago Bulls</h5>
+                    <p class="card-text">$<span class="item_price">129.99</p>
+                    <button class="btn btn-outline-secondary add_item" data-id="6">Buy</button>
                 </div>
             </div>
         </div>
@@ -125,18 +128,18 @@
         <div class="row gap">
             <div class="card col-12 col-md-6 col-lg-4 box">
                 <img class="card-img-top" src="image/beige_shorts.jpg" alt="beige shorts">
-                <div class="card-body">
-                    <h5 class="card-title">Men's Mitchell & Ness Gold Chicago Bulls Hardwood</h5>
-                    <p class="card-text">$74.99</p>
-                    <a href="#" class="btn btn-outline-secondary" data-toggle="modal" data-target="#infoModal">Details</a>
+                <div class="card-body item_box">
+                    <h5 class="card-title item_title">Men's Mitchell & Ness Gold Chicago Bulls Hardwood</h5>
+                    <p class="card-text">$<span class="item_price">74.99</p>
+                    <button class="btn btn-outline-secondary add_item" data-id="7">Buy</button>
                 </div>
             </div>
             <div class="card col-12 col-md-6 col-lg-4 box">
                 <img class="card-img-top" src="image/black_shorts.jpg" alt="black shorts">
-                <div class="card-body">
-                    <h5 class="card-title">Men's Nike Black Chicago Bulls Statement</h5>
-                    <p class="card-text">$79.99</p>
-                    <a href="#" class="btn btn-outline-secondary" data-toggle="modal" data-target="#infoModal">Details</a>
+                <div class="card-body item_box">
+                    <h5 class="card-title item_title">Men's Nike Black Chicago Bulls Statement</h5>
+                    <p class="card-text">$<span class="item_price">79.99</p>
+                    <button class="btn btn-outline-secondary add_item" data-id="8">Buy</button>
                 </div>
             </div>
         </div>
@@ -158,6 +161,7 @@
 				<img src="image/facebook.jpg" alt="facebook">
 			</a>
     </footer>
+    
     <!-- Modal -->
     <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -166,7 +170,7 @@
                     <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
-            </button>
+                        </button>
                 </div>
                 <div class="modal-body">
                     <h1>Classic hat</h1>
@@ -183,7 +187,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-    <script defer src="js/index.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/cart.js"></script>
 </body>
 
 </html>
