@@ -1,22 +1,22 @@
 class ProductList {
-    constructor (productsUrl, renderContainer, cart) {
+    constructor(productsUrl, renderContainer, cart) {
         this.cart = cart;
         fetch(productUrl)
-        .then(result => result.json())
-        .then (products => {
-            this.products = products;
-            this.renderProducts(renderContainer, products);
-            this.addEventListener();
-        })
+            .then(result => result.json())
+            .then(products => {
+                this.products = products;
+                this.renderProducts(renderContainer, products);
+                this.addEventListener();
+            })
     }
-    getProdyctById(id){
-        return this.products.find(el => el.id ===id);
+    getProdyctById(id) {
+        return this.products.find(el => el.id === id);
     }
-    renderProducts (container, products) {
+    renderProducts(container, products) {
         let productListDomString = '';
         products.forEach(product => {
             productListDomString +=
-            `<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                `<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
                   <div class="card product">
                     <img class="card-img-top" src="img/${product.image}" 
                         alt="${product.title}">
@@ -35,20 +35,20 @@ class ProductList {
         });
         container.html(productListDomString);
     }
-    addEventListener(){
+    addEventListener() {
         $('#productInfoModal').on('show.bs.modal', event => {
             const button = $(event.relatedTarget);
             const id = String(button.data('id'));
             const product = this.getProdyctById(id);
             const modal = $('#productInfoModal');
-            modal.find ('.modal-body .card-img-top')
-            .attr('src', 'img/products/'+ product.image)
-            .attr('alt', product.title);
+            modal.find('.modal-body .card-img-top')
+                .attr('src', 'img/products/' + product.image)
+                .attr('alt', product.title);
             modal.find('modal-body .card-title').text(product.title);
             modal.find('.modal-body .card-text').text(product.description);
             modal.find('button.buy')
-            .text('${product.price}- Buy')
-            .data('id', id);
+                .text('${product.price}- Buy')
+                .data('id', id);
         });
         $('.card.product button.buy, #productInfoModal button.buy').clock(event => {
             const button = $(event.target);
