@@ -7,13 +7,11 @@ header a:hover {
 }
 header nav ul li a {
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: 200;
     text-decoration: none;
 }
-main div{
-    background-color: gainsboro;
-}
+
 h2 {
     
     color: black;
@@ -34,48 +32,55 @@ h2 {
     left: 25%;
     z-index: 1051;
 }
-.box{
-    
-    border-top-color:gainsboro;
-    border-left-color: gainsboro;
-    border-bottom-color: grey;
-    border-right-color: grey;
+.color-icon{
+    color:red;
 }
-textarea{
-    border-bottom-color: gainsboro;
-    border-right-color: gainsboro;
-   border-width:2px; 
- 
-}
-fieldset input{
-     border-bottom-color: gainsboro;
-    border-right-color: gainsboro;
-   border-width:2px; 
- 
-}
+
 .window{
     display:block;
-}
-
-footer{
-    background-color: gainsboro;
-}
-
-#cart_content {
-  margin-top: 10px;
-  padding: 5px;
-}
-.item_box {
-  margin-bottom: 10px;
-  padding: 5px;
-}
-.shopping_list {
-	width: 100%;
-  margin-top: 10px;
-	border-collapse: collapse;
+    width:100%;
 }
 .shopping_list td,
 .shopping_list th {
 	padding: 10px;
 	border: 1px solid #AAAAAA;
+}
+.intro {
+    max-width: 400px;
+    margin-top: 150px;
+    text-align: center;
+}
+.card {
+    height: 100%;
+}
+
+
+
+.btn {
+    padding: 0.75rem 0.7rem;
+}
+#carouselOffers {
+   width: 16px;
+  height: 16px;
+}
+
+#carouselOffers img {
+    max-height: 450px;
+}
+.position{
+    position:fixed;
+    z-index:1;
+}
+.img-txt{
+    float:left;
+    margin-right: 10px;
+    margin-bottom:10px;
+}
+li {
+    list-style-type: none;
+}
+.cart-col{
+    background:transparent;
+    color:red;
+    font-size: 20px;
 }

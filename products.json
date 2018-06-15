@@ -1,0 +1,51 @@
+[
+    {
+        "id": "1",
+        "title": "Classic hat",
+        "image": "hat_classic.jpg",
+        "description": "Men's Mitchell & Ness Red Chicago Bulls",
+        "price": 31.99
+    },
+    {
+        "id": "2",
+        "title": "Whie hat",
+        "image": "hat_white.jpg",
+        "description": "Men's New Era White Chicago Bulls NBA City",
+        "price": 29.99
+    },
+    {
+        "id": "3",
+        "title": "Black-red hat",
+        "image": "hat_black_red.jpg",
+        "description": "Men's Mitchell & Ness Black Chicago Bulls",
+        "price": 31.99
+    },
+    {
+        "id": "4",
+        "title": "Red jersey",
+        "image": "red_jersey.jpg",
+        "description": "Men's Nike Red Chicago Bulls Authentic Custom Jersey",
+        "price": 224.99
+    },
+    {
+        "id": "5",
+        "title": "Black jersey",
+        "image": "black_jersey.jpg",
+        "description": "Men's Mitchell & Ness Scottie Pippen Black Chicago Bulls 97-98",
+        "price": 129.99
+    },
+    {
+        "id": "6",
+        "title": "White jersey",
+        "image": "white_jersey.jpg",
+        "description": "Men's Mitchell & Ness Scottie Pippen White Chicago Bulls",
+        "price": 129.99
+    },
+    {
+        "id": "7",
+        "title": "Black shorts",
+        "image": "black_shorts.jpg",
+        "description": "Men's Nike Black Chicago Bulls Statement",
+        "price": 79.99
+    }
+]
